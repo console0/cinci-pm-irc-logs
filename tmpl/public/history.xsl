@@ -53,14 +53,7 @@
                                     <tr>
                                         <td><xsl:value-of select="@logged_at"/></td>
                                         <td><xsl:value-of select="./irc_user/@shortname"/></td>
-                                        <xsl:choose>
-                                        <xsl:when test="string-length(substring-after(@message,'ACTION')) &gt; 0">
-                                            <td><i><xsl:value-of select="substring-after(@message,'ACTION')"/></i></td>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <td><xsl:value-of select="@message"/></td>
-                                        </xsl:otherwise>
-                                        </xsl:choose>
+                                        <td><xsl:value-of select="@message"/></td>
                                     </tr>
                                 </xsl:for-each>
                         </xsl:when>

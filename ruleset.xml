@@ -11,6 +11,28 @@
      <http_method value="POST" />
      <class value="public" />
     </resource>
+    <resource>
+     <sub value="next_and_last" />
+     <http_method value="GET" />
+     <http_method value="POST" />
+     <class value="public" />
+    </resource>
+   </resources>
+  </page>
+  <page uri="/history/{date}/" name="history">
+   <resources>
+    <resource>
+     <sub value="next_and_last" />
+     <http_method value="GET" />
+     <http_method value="POST" />
+     <class value="public" />
+    </resource>
+    <resource>
+     <sub value="irc_history" />
+     <http_method value="GET" />
+     <http_method value="POST" />
+     <class value="public" />
+    </resource>
    </resources>
   </page>
  </pages>
