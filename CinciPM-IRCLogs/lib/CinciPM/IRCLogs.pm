@@ -57,7 +57,7 @@ sub next_and_last
 
     my $next = $self->_manager('IrcLog')->get_objects(
                     query => [ logged_at => { gt => $passed . ' 23:59:59' }, irc_command => 'PRIVMSG' ],
-                    sort_by => 'logged_at desc',
+                    sort_by => 'logged_at asc',
                     limit => 1 )->[0];
     if ($next)
     {
