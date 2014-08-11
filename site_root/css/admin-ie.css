@@ -1,0 +1,23 @@
+/* IE 8 admin style overrides */
+
+
+/*
+ * Makes identifying tabs easier by
+ * placing them in a container than makes
+ * THEM LOOK LIKE TABS
+ */
+
+
+
+.tabs .tab-title > a {
+    margin-right: 3px;
+    /* compensate for padding being redefined by shims */
+    padding: 10px !important;
+    
+}
+
+.no-bottom-margin {
+    margin-bottom: 0 !important;
+}
+
+

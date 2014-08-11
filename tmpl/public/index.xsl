@@ -11,6 +11,46 @@
   </xsl:call-template>
  </xsl:template>
  <xsl:template match="/" mode="local">
-  <p>It worked</p>
+    <div class="row">
+        <div class="large-12 columns">
+        <xsl:call-template name="paged_results">
+            <xsl:with-param name="results_node" select="/response/irc_log_list"/>
+        </xsl:call-template>
+        </div>
+    </div>
  </xsl:template>
+
+    <xsl:template name="paged_data">
+    <div class="row">
+        <div class="large-12 columns">
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Nick</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <xsl:choose>
+                        <xsl:when test="//results/result">
+                                <xsl:for-each select="//results/result">
+                                    <tr>
+                                        <td><xsl:value-of select="@logged_at"/></td>
+                                        <td><xsl:value-of select="./irc_user/@shortname"/></td>
+                                        <td><xsl:value-of select="@message"/></td>
+                                    </tr>
+                                </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <tr><td colspan="3">Nothing Today</td></tr>
+                        </xsl:otherwise>
+                </xsl:choose>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </xsl:template>
+
+
 </xsl:stylesheet>

@@ -1,0 +1,427 @@
+/*brand colors
+ *
+ *primary blue: #003359
+ *
+ *
+ */
+
+html {
+    height:  100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0;
+    color:  #777;
+    height:  100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald",sans-serif;
+    font-weight: lighter;
+    color: #003359;
+}
+
+h1 {font-size:  2rem;}
+h2 {font-size:  1.75rem;}
+h3 {font-size:  1.5rem;}
+h4 {font-size:  1.25rem;}
+h5 {font-size:  1rem;}
+
+
+.columns {
+    padding-left:  10px;
+    padding-right: 10px;
+}
+
+form {
+    margin-bottom: 0;
+}
+
+
+.wrapper {
+    margin-top: 0;
+    padding-top:  0;
+    height:  100%;
+}
+
+.content_wrapper {
+    margin-top: 0;
+    padding-top:  0;
+    padding-bottom:  0;
+    min-height:  100%;
+    margin-bottom:  -200px;
+}
+
+.content_wrapper a {
+    color:  #009cff;
+}
+
+.itembox h1,
+.itembox h2,
+.itembox h3,
+.itembox h4,
+.itembox h5,
+.itembox h6 {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.items_list .item-description {
+    font-size:  14px;
+    letter-spacing: 0;
+    border:  none;
+}
+
+.items_list .itembox {
+    position: relative;
+    border-color: rgb(240,240,240);
+}
+
+.items_list .item-points {
+    
+    
+    font-size:  12px;
+}
+
+
+/* make the top nav fixed */
+
+#TopNav {
+    background-color:  #003359;
+    position: fixed;
+    width:  100%;
+    z-index: 9999;
+    
+}
+
+
+/* nav color overrides */
+
+nav.top-bar {
+    background-color:  #003359;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background-color:  #003359;
+}
+
+.top-bar-section .has-form {
+    background-color:  #003359;
+}
+
+nav.top-bar .divider {
+    display:  none;
+}
+
+nav.top-bar .name {
+    line-height: 45px;
+}
+nav.top-bar .logo {
+    padding-left: 5px;
+}
+
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #00253F;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.top-bar-section ul li {
+    background: #00253F;
+    background-color: #00253F;
+}
+
+.top-bar-section ul li a {
+    font-family: "Oswald",sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:  12px;
+}
+
+.top-bar-section .dropdown li a {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+    color: #fff;
+    background: #00253F !important;
+    background-color: #00253F !important;
+}
+
+.top-bar-section .has-dropdown > a {
+    background-color:  #003359 !important;
+}
+
+.top-bar-section .has-dropdown > a:hover {
+    background-color:  #00253F !important;
+}
+
+
+.top-bar-section .dropdown li:not(.has-form):hover>a:not(.button) {
+    color: #fff;
+    background-color: #001B2D !important;
+}
+
+.top-bar.expanded .title-area
+{
+    background-color: #00253F !important;
+}
+
+#NavSearch button {
+    background-color:  #00253F;
+    color:  white !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+
+
+/* secondary customer nav */
+
+#CustomerNav {
+    margin-top:  45px;
+    background-color:  #95ACBC;
+    padding-top:  10px;
+    padding-bottom:  10px;
+    
+}
+
+#CustomerNav .columns {
+    padding-left:  5px;
+    padding-right:  5px;
+}
+
+#CustomerNav a {
+    display:  block;
+    border:  solid 1px rgba(0,0,0,0.1);
+    line-height: 45px;
+    text-align: center;
+    color:  #444;
+    background-color:  rgba(255,255,255,0.1);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#CustomerNav a:hover {
+    background-color:  rgba(255,255,255,0.6);
+    transition: all 0.1s ease-in-out;
+    color:  black;
+}
+
+
+/* buttons */
+
+.button {
+    background-color:  #009cff;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    
+    
+    margin: 0;
+    padding: 14px 40px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color:  white !important;
+    
+}
+
+.button.secondary {
+    background-color: #e7e7e7;
+    border-color: #007095;
+    color: #333 !important;
+}
+
+.button.secondary:hover {
+    background-color: #333;
+    color:  white !important;
+}
+
+.postfix.button {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.button:hover {
+    background-color: #003359;
+}
+
+
+/* category listing */
+
+.category-masthead {
+    background-color:  #eee;
+    margin-bottom: 10px;
+}
+
+.category-masthead .breadcrumbs {
+    background-color:  transparent;
+    border:  none;
+    margin-bottom: 0;
+}
+
+.category-masthead .breadcrumbs a {
+    color:  #003359;
+}
+
+
+
+
+#Categories a {
+    color:  #003359;
+    
+}
+
+#Categories li:hover {
+    color:  white;
+    background-color:  #003359;
+}
+
+#Categories li:hover a {
+    color:  white;
+}
+
+.category_list li.active {
+    background-color: #ccc;
+}
+
+
+/* product detail page */
+
+#ProductDetail .pts {
+    background-color:  #666;
+    color:  white;
+    padding:  6px;
+    display:  inline-block;
+    font-size:  14px;
+}
+
+
+/* footer */
+
+.footer_wrapper {
+    background-color:  #1B242A;
+    height:  200px;
+}
+
+.footer_wrapper h1,
+.footer_wrapper h2,
+.footer_wrapper h3,
+.footer_wrapper h4,
+.footer_wrapper h5,
+.footer_wrapper h6 {
+    color:  white;
+}
+
+.footer_wrapper a {
+    color:  silver;
+    font-size:  13px;
+    text-transform: uppercase;
+}
+
+
+
+.footer-push {
+    /*required for sticky footer to not overlap page content*/
+    height:  200px;
+}
+
+
+
+/* home page stuff */
+ 
+ 
+ #HomeMain {
+    background-color:  rgb(250,250,250);
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ #CoreValuesContainer {
+    padding: 30px;
+    padding-top: 10px;
+    background-color: #eee;
+ }
+ 
+ #CoreValues {
+    border-top:  solid 1px #ccc;
+    padding:  2px;
+    padding-top:  10px;
+ }
+ 
+ #CoreValues h2 {
+    text-transform: uppercase;
+    font-size:  20px;
+    letter-spacing: 1px;
+    color:  #333;
+ }
+ 
+ #CoreValues h3 {
+    width:  65%;
+    line-height: normal;
+ }
+ 
+ #CoreValues ul {
+    padding-top:  20px;
+    padding-left:  5px;
+ }
+
+
+
+#CoreValuesContainer .slick-next:before
+#CoreValuesContainer .slick-prev:before {
+    color:  #666;
+}
+
+
+#SuggestionBox {
+    background-color:  #556D7F; 
+    color:  white;
+    padding:  20px;
+    
+}
+
+#SuggestionBox h3 {
+    color:  white;
+    margin-top:  0;
+    padding-top:  0;
+    line-height: normal;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#SuggestionBox textarea {
+    height:  240px;
+}
+
+
+
+/**************************************
+
+SMALL MOBILE DEVICES, IPHONE, ETC
+
+ **************************************/
+
+
+/* max-width 640px, mobile-only styles */
+@media only screen and (max-width: 40em) {
+ 
+ 
+.items_list .itembox {
+    position: relative;
+}
+
+.items_list .item-points {
+    position: relative;
+    background-color:  transparent;
+    color:  #666;
+}
+    
+}

@@ -3,10 +3,10 @@
 <ruleset>
  <conf domain="irclogs.console0.com" client_package="CinciPM::IRCLogs" enable_domain_lib="1" api_package="Chameleon5::API::JSON" api_secret_key="13049772658.3449" template_package="Chameleon5::Template::XSLT" serve_static_xsl="1" />
  <pages>
-  <page uri="/">
+  <page uri="/" name="home">
    <resources>
     <resource>
-     <sub value="test_sub" />
+     <sub value="todays_log" />
      <http_method value="GET" />
      <http_method value="POST" />
      <class value="public" />
