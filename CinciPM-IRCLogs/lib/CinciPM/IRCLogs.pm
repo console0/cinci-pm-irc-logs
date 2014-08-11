@@ -24,7 +24,8 @@ sub todays_log
 
     $self->quick_manager_append( 'IrcLog',
                 query => [
-                            'logged_at' => { ge => DateTime->now->ymd }
+                            logged_at => { ge => DateTime->now->ymd }
+                            irc_comment => 'PRIVMSG',
                          ],
                 with_objects => [ 'irc_user' ],
                 per_page => 10000,
